@@ -21,7 +21,7 @@ public class ImageView extends JComponent {
         int width = this.getWidth();
         int height = this.getHeight();
         System.out.println(width +":"+height);
-        g.drawImage(drawImage,0,0,width,height,null);
+        g.drawImage(drawImage,0,0,drawImage.getWidth(null),drawImage.getHeight(null),null);
     }
 
     public void repaint(String fileName) {
