@@ -10,7 +10,8 @@ import java.io.*;
 public class ImageView extends JComponent {
     private Image drawImage;
     public ImageView (String fileName) {
-        try (FileInputStream fileInputStream = new FileInputStream(fileName)) {
+        try (InputStream fileInputStream = this.getClass().getClassLoader().getResourceAsStream(fileName)) {
+            assert fileInputStream != null;
             drawImage = ImageIO.read(fileInputStream);
         } catch (Exception e) {
             e.printStackTrace();

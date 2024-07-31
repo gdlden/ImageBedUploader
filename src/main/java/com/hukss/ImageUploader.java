@@ -33,7 +33,7 @@ public class ImageUploader extends JFrame {
         setCursor(Cursor.DEFAULT_CURSOR);
 
 
-        String fileName = "src/main/resources/222.png";
+        String fileName = "222.png";
         ImageView imageView = new ImageView(fileName);
 
         JPanel menuJPanel = new JPanel();
